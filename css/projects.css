@@ -33,7 +33,7 @@
 }
 #projects-section #projects-section-bg .project-box .project-description {
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   letter-spacing: 0.5px;
 }
 #projects-section #projects-section-bg .project-box .project-tools ul {
@@ -50,7 +50,7 @@
   background: rgba(255,255,255,0.075);
 }
 #projects-section #projects-section-bg .project-box p {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 #projects-section #projects-section-bg .project-box .project-features p {
   display: block;
