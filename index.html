@@ -1,443 +1,578 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jayrut Patel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,900" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/background.css" />
+    <link rel="stylesheet" href="./css/box.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/social-bar.css" />
+    <link rel="stylesheet" href="./css/skills.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/timeline.css" />
+    <link rel="stylesheet" href="./css/reach.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
 
-<head>
-	<meta charset="UTF-8">
-	<title>Jayrut Patel</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,900">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-		<link rel="stylesheet" href="./css/base.css">
-		<link rel="stylesheet" href="./css/background.css">
-	<link rel="stylesheet" href="./css/box.css">
-	<link rel="stylesheet" href="./css/animate.css">
-	<link rel="stylesheet" href="./css/header.css">
-	<link rel="stylesheet" href="./css/social-bar.css">
-	<link rel="stylesheet" href="./css/skills.css">
-	<link rel="stylesheet" href="./css/projects.css">
-	<link rel="stylesheet" href="./css/timeline.css">
-	<link rel="stylesheet" href="./css/reach.css">
-	<link rel="stylesheet" href="./css/footer.css">
-	<link rel="icon" type="image/png" href="images/favicon.ico">
+    <script defer src="./js/box-grid.js"></script>
+    <script src="https://use.fontawesome.com/9dfb2e7b86.js"></script>
+    <script defer src="./js/app.js"></script>
+  </head>
 
-	<script defer src="./js/box-grid.js"></script>
-	<script src="https://use.fontawesome.com/9dfb2e7b86.js"></script>
-	<script defer src="./js/app.js"></script>
-
-</head>
-
-<body>
-	<div class="animated hidden" id="drop-nav">
-		<ul class="animated hidden" id="drop-nav-ul">
-			<li><a href="#skills-section">Skills</a></li>
-			<li><a href="#background-section">About Me</a></li>
-			<li><a href="#projects-section">Projects</a></li>
-			<li><a href="#timeline-container">Experience</a></li>
-			<li><a href="#reach-section">Reach</a></li>
-		</ul>
-	</div>
-	<header class="animated fadeIn">
-		<div class="header-bg-color col" >
-			<nav style="position: fixed">
-				<h2>JAYRUT PATEL <i class="fa fa-navicon" id="navicon" aria-hidden="true"></i></h2>
-				<ul>
-			 		<li><a href="#skills-section">Skills</a></li>
-					<li><a href="#background-section">About Me</a></li>
-					<li><a href="#projects-section">Projects</a></li>
-					<li><a href="#timeline-container">Experience</a></li>
-					<li><a href="#reach-section">Reach</a></li>
-				</ul>
-			</nav>
-			<div class="col" id="intro">
-				<p class="title">Hi, I'm Jayrut.</p>
-				<p class="sub-title"><span class="sm-hide">JavaScript enthusiast.</span> <span id="sm-grow">Software developer.</span>
-					<br>
-					<span class="sm-hide">Computer Science Graduate.</span></p>
-			</div>
-			<div id="social-bar"><a href="https://github.com/jayrut"><i class="fa fa-github" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/jayrutp"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-				<a href="https://www.facebook.com/jayrutp"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="https://drive.google.com/file/d/0B3MvWAVYqRurcjFJcnNPc0ZiTFU/view?usp=sharing"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
-				</div>
-		</div>
-	</header>
-
-	<div class="content-container">
-		<div id="skills-section">
-			<div class="section-head col">
-				<h1>Skills</h1>
-			<div id="skills">
-				<ul class="flex wrap">
-					<li class="dd">javascript</li>
-					<li class="dd">java</li>
-					<li class="dd">react.js</li>
-					<li class="dd">redux</li>
-					<li class="dd">node.js</li>
-					<li class="dd">html</li>
-					<li class="dd">bootstrap</li>
-					<li class="dd">css</li>
-					<li class="dd">jquery</li>
-					<li class="dd">sass</li>
-					<li class="dd">ajax</li>
-					<li class="dd">json</li>
-					<li class="dd">angular</li>
-					<li class="dd">express.js</li>
-					<li class="dd">sql</li>
-					<li class="dd">mongodb</li>
-					<li class="dd">webpack</li>
-					<li class="dd">linux</li>
-					<li class="dd">bash</li>
-					<li class="dd">git</li>
-					<li class="dd">responsive design</li>
-					<li class="dd">php</li>
-					<li class="dd">magento</li>
-					<li class="dd">wordpress</li>
-					<li>mocha/chai</li>
-					<li>SemaphoreCI</li>
-					<li>stylus</li>
-					<li>cross browser testing</li>
-					<li>stylus</li>
-					<li>materialize</li>
-					<li>android application development</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div id="background-section">
-		<div class="content-container" style="width: 100%">
-			<div class="section-head col" style="  margin-top: 60px;">
-				<h1>About Me</h1>
-				<h2>Full Stack Developer</h2></div>
-			<p>I am an energetic software engineer with a passion for creative design and a strong foundation in JavaScript. As someone who loves overcoming challenges and problem solving, I enjoy building applications that solve real world problems. <br>
-
-				<br>My mission as an effective developer, capable of making immediate positive contributions in a collaborative setting, is finding and working with teams that are equally passionate about creating quality, impactful products.
-				<br>
-				<br> <strong>As a graduate,</strong> I have focused learning data processing (indexing, retrieval, filtering), distributed systems (primarily Amazon Dynamo) and various topics in artificial intelligence (Machine Learning, Stochastic Simulation, Data Mining). In addition to that, I am interested in Android App Development and I frequently take part in online coding competitions mainly on HackerRank and LeetCode.
-				<br>
-			</p>
-		</div>
-	</div>
-
-
-	<div id="projects-section">
-		<div id="projects-section-bg">
-			<div class="content-container">
-
-				<div class="section-head col">
-					<h1 id="projects">Projects</h1>
-
-				</div>
-				<div id="projects-container">
-
-
-										<div class="project-box animated" id="react-project">
-											<h2 class="project-name"><a href="https://github.com/jayrut/Hooked"><i class="fa fa-github" aria-hidden="true"></i>HooKed – React w/ Firebase App</h2></a>
-											<a href="https://github.com/jayrut/Hooked"><img class="project-name oth" style="width : 60%" src="https://s25.postimg.org/j9y8074v3/hooked.png" alt=""></a>
-
-											<h3 class="project-description">Created a real-time app for a fictitious sea food market where price and quantity can change at moment’s notice by authorized users.</h3>
-											<p>Constructed front end with React, Stylus, JavaScript, HTML and CSS. Leveraged Firebase to store database and improved social authentication strategy with OAuth.
-											</p>
-
-											<div class="project-tools">
-												<ul class="flex wrap">
-													<li>ReactJs</li>
-													<li>Stylus</li>
-													<li>Firebase</li>
-													<li>OAuth</li>
-													<li>Webpack</li>
-
-												</ul>
-											</div>
-
-											<h2 class="project-name"><br><a href="https://github.com/jayrut/LearningFuze">	<i class="fa fa-github" aria-hidden="true"></i>LearningFuze</h2></a>
-											<a href="https://github.com/jayrut/LearningFuze"><img class="project-name oth" style="width : 60%" src="https://s25.postimg.org/fhepkgpcv/learningfuze.gif" alt=""></a>
-
-										<h3 class="project-description">
-										LearningFuze is  a web application that crowd-source recommended resources for learning programming languages and frameworks. Users can also able to Create and rate curriculum posted on LearningFuze </h3>
-									<p>Built application with React, Node.js/Express, and MongoDB . Material UI was used to make an attractive and intuitive user interface </p>
-
-											<div class="project-tools">
-												<ul class="flex wrap">
-													<li>ReactJs</li>
-													<li>Node.js</li>
-													<li>Express</li>
-													<li>MongoDB</li>
-													<li>Material UI</li>
-													<li>Webpack</li>
-												</ul>
-											</div>
-								</div>
-
-								<div class="project-box animated hidden" id="yelp-project">
-									<h2 class="project-name"><a href="https://github.com/jayrut/foodler"><i class="fa fa-github" aria-hidden="true"></i> Foodler – Restaurant finder App</h2></a>
-									<a href="#"><img class="project-name oth" style="width : 60%" src="https://s25.postimg.org/izqpguq8v/foodler.gif" alt=""></a>
-
-									<h3 class="project-description">Foodler is a restaurant finder app that will do the work for you. All you have to do is swipe to see restaurant's details and reviews. Implemented a swipeable interface to search nearby restaurants and details based on user’s current location. </h3>
-								<p>Developed a single page responsive front end using AngularJS, UI routers, jQuery and Bootstrap. Integrated Google’s place API to retrieve nearby restaurant based on geographic coordinates. </p>
-										<br>
-									<div class="project-tools">
-										<ul class="flex wrap">
-											<li>AngularJs</li>
-											<li>BootStrap</li>
-											<li>UI routers</li>
-											<li>jQuery</li>
-											<li>Google’s place API</li>
-										</ul>
-									</div>
-
-									<h2 class="project-name"><br><a href="https://github.com/jayrut/yelpcamp.git"><i class="fa fa-github" aria-hidden="true"></i> YelpCamp</h2></a>
-									<a href="https://infinite-caverns-43074.herokuapp.com/"><img class="project-name oth" style="width : 60%" src="https://s25.postimg.org/sbwnhicm7/image.gif" alt=""></a>
-
-									<h3 class="project-description">A Node.js Yelp clone using Campsites. This application allows users to login, add photos, reviews and upload campgrounds around. User can also view and comment other people's campground.</h3>
-									<p>I created this project to practice my CRUD and creating RESTful routes with Node.js. Also, I wanted to integrate a NoSQL database in MongoDB, which proved to be very cool.</p>
-										<br>
-									<div class="project-tools">
-										<ul class="flex wrap">
-											<li>BootStrap</li>
-											<li>Node.js</li>
-											<li>Express</li>
-											<li>Passport.js</li>
-												<li>MongoDB</li>
-												<li>Mongoose</li>
-										</ul>
-									</div>
-
-						</div>
-
-
-					<div class="project-box animated hidden" id="ecom-project">
-					<h2 class="project-name"><a href="http://www.myledlite.com/"><i class="fa fa-opencart" aria-hidden="true"></i>E-Commerce Website</h2></a>
-					<a href="http://www.myledlite.com/"><img  class="project-name oth" style="width : 60%" src="https://s25.postimg.org/xxudfrqsf/myled_iloveimg_resized.gif" alt=""></a>
-					<h3 class="project-description">Developed and maintaining an e-Commerce website based on Magento platform, and CMS applications based on WordPress platform.</h3>
-					<p>I am responsible for finding and fixing vulnerabilities. Applying security patches. Marketing with social networking and paid-advertising. Regularly contribute to growth, UX design, and overall business strategies.<br>
-						</p>
-						<div class="project-tools">
-							<ul class="flex wrap">
-								<li>html</li>
-								<li>css</li>
-								<li>bootstrap</li>
-								<li>javascript</li>
-								<li>ajax</li>
-								<li>json</li>
-								<li>php</li>
-								<li>mysql</li>
-								<li>api</li>
-							</ul>
-						</div>
-
-						<h2 class="project-name"><br><a href="http://agtandroid.tk/"><i class="fa fa-opencart" aria-hidden="true"></i>WordPress Website</h2></a>
-						<a href="http://agtandroid.tk/"><img  class="project-name oth" style="width : 60%" src="https://s25.postimg.org/rgq7rruxr/mztax.gif" alt=""></a>
-						<h3 class="project-description">Developed and managed website CMS applications based on WordPress platform for an accounting firm</h3>
-						<p> I was able to ensure implementation of a new responsive design leading to significant SEO performance increases after launch. <br>
-							</p>
-							<div class="project-tools">
-								<ul class="flex wrap">
-									<li>wordpress</li>
-									<li>html5</li>
-									<li>css3</li>
-									<li>bootstrap</li>
-									<li>jquery</li>
-									<li>php</li>
-									<li>mysql</li>
-									<li>seo</li>
-									<li>api</li>
-								</ul>
-							</div>
-
-					</div>
-
-
-			<div class="project-box animated hidden" id="react-project">
-				<h2 class="project-name"><a href="#"><i class="fa fa-github" aria-hidden="true"></i> React Projects</h2></a>
-				<a href="#"><img class="project-name oth" style="width : 60%" src="https://s25.postimg.org/gz05w0u3j/react_app.png" alt=""></a>
-
-
-				<h3 class="project-description"><a href="https://obscure-cliffs-14428.herokuapp.com"><i class="fa fa-github"></i> YouTube Clone</a></h3>
-				<p>YouTube Clone is Video Player to watch Ad Free YouTube videos by searching keywords. Created single page application in with React, AJAX, Underscore.js, Youtube search API and Bootstrap.</p>
-
-				<div class="project-tools">
-					<ul class="flex wrap">
-						<li>React</li>
-						<li>AJAX</li>
-						<li>YouTube search API</li>
-						<li>Bootstrap</li>
-							<li>Underscore.js</li>
-					</ul>
-				</div>
-
-			<br>
-			<h3 class="project-description"><br><a href="https://github.com/jayrut/redux-weatherapp"><i class="fa fa-github"></i> WeatherCast</a></h3>
-			<p>WeatherCast is a single page weather app to provide real-time weather analytics from any city in the United States. Built using React.js, Redux, Webpack, Babel, and axios. Handled real-time data requests to OpenWeather API. Implemented React-Sparklines and React-Google-Maps components to display real-time weather analytics.
-			</p>
-		<br>
-				<div class="project-tools">
-					<ul class="flex wrap">
-						<li>React</li>
-						<li>Redux</li>
-						<li>React-Sparklines</li>
-						<li>React-Google-Maps</li>
-						<li>OpenWeather API</li>
-					</ul>
-				</div>
-		</div>
-
-
-
-
-
-			<div class="project-box animated hidden" id="js-project">
-				<h2 class="project-name"><a href="https://github.com/jayrut/Colorify"><i class="fa fa-github" aria-hidden="true"></i> COLORIFY -Mini Game</h2></a>
-				<a href="https://jayrut.github.io/Colorify/"><img class="project-name oth" style="width : 60%" src="https://s25.postimg.org/x9liwts2n/colorify.png" alt=""></a>
-				<h3 class="project-description">An addictive, fast-paced, color picker mini game which drive people crazy over color and time.</h3>
-				<div class="project-tools">
-					<ul class="flex wrap">
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-						<li>jQuery</li>
-					</ul>
-				</div>
-			</div>
-
-					<div class="project-box animated hidden" id="android-project">
-						<h2 class="project-name"><a href="https://github.com/jayrut/AugmentedTraveller"><i class="fa fa-github" aria-hidden="true"></i>Augmented Traveller</h2></a>
-							<a href="https://github.com/jayrut/AugmentedTraveller"><img class="project-name agt" style="width : 60%" src="https://s25.postimg.org/7jd2vfujj/agt1.gif" alt=""></a>
-						<h3 class="project-description">Augmented Traveler, helps users to know better about Los Angeles city by providing different functionalities such as location-based-information, images, reviews, ratings of most reviews places by visitors.
-					</h3>
-						<p>Used Google API with REST to browse many reviews, suggestion and candid photos by traveler to visit interesting places in Los Angeles city.
-							<br>
-							<br>Implemented Google maps api V2 for the navigation and real time traffic information to the destination.
-							<br>
-							<br>Implemented android xml parsing to load and update data from remote url. Developed registration, login and forum activities with PHP, MySQL and SQLlite.
-						</p>
-						<div class="project-tools">
-							<ul class="flex wrap">
-								<li>android studio</li>
-								<li>Java</li>
-								<li>json</li>
-								<li>php</li>
-								<li>mysql</li>
-								<li>xml</li>
-								<li>api</li>
-								<li>sqlite</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="project-box animated hidden" id="aws-project">
-						<h2 class="project-name"><a href="https://github.com/jayrut/Spark.git"><i class="fa fa-github" aria-hidden="true"></i> Movie Recommendation Engine</h2></a>
-						<a href="https://github.com/jayrut/Spark.git"><img class="project-name oth" style="width : 60%" src="https://s15.postimg.org/qzsajchwb/aws.gif" alt=""></a>
-						<h3 class="project-description">A movie recommendation system based on a MovieLens database using Apache Spark and Python.</h3>
-						<p>Used collaborative filtering with Spark’s Alternative Least Squares implementation and MLLib to produce movie recommendation. Created a similar Movies list from One million rating by running Spark on Amazon web Cluster.
-						<div class="project-tools">
-							<ul class="flex wrap">
-								<li>Apache Spark</li>
-								<li>Python</li>
-								<li>Amazon Web Service</li>
-								<li>Python</li>
-								<li>html</li>
-								<li>css</li>
-							<li>ajax</li>
-							<li>javascript</li>
-							</ul>
-						</div>
-					</div>
-
-		</div>
-		<h2 id="next">NEXT<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h2></div>
-	</div>
-	</div>
-
-
-		<div id="timeline-container">
-    <div class="page-header">
-        <h1 id="timeline">MY EXPERIENCE</h1>
+  <body>
+    <div class="animated hidden" id="drop-nav">
+      <ul class="animated hidden" id="drop-nav-ul">
+        <li><a href="#skills-section">Skills</a></li>
+        <li><a href="#background-section">About Me</a></li>
+        <li><a href="#projects-section">Projects</a></li>
+        <li><a href="#timeline-container">Experience</a></li>
+        <li><a href="#reach-section">Reach</a></li>
+      </ul>
     </div>
-    <ul class="timeline">
-        <li>
-          <div class="timeline-badge"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h3 class="timeline-title"><strong>Full Stack Web Developer</strong></h3>
-            <h3>Ray-Lite Industries,Inc.</h3>
-						<h4 class="">June 2016 - Present | Brea, CA</h4>
-            </div>
-            <div class="timeline-body"><hr>
-            <p><i class="fa  fa-caret-right" aria-hidden="true"></i>Developed and maintaining an eCommerce website using Magento framework. I am responsible for development and deployment of entire e-commerce store.<br><i class="fa  fa-caret-right" aria-hidden="true"></i>Coding for cross browser responsiveness and compatibility.</p>
-<p><i class="fa  fa-caret-right" aria-hidden="true"></i>Front end implementations in Javascript, jQuery, CSS, Ajax, Bootstrap<br><i class="fa  fa-caret-right" aria-hidden="true"></i>Regularly contribute to growth, UX design, and overall business strategies.</p>
-            </div>
+    <header class="animated fadeIn">
+      <div class="header-bg-color col">
+        <nav style="position: fixed">
+          <h2>
+            JAYRUT PATEL
+            <i class="fa fa-navicon" id="navicon" aria-hidden="true"></i>
+          </h2>
+          <ul>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#background-section">About Me</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#timeline-container">Experience</a></li>
+            <li><a href="#reach-section">Reach</a></li>
+          </ul>
+        </nav>
+        <div class="col" id="intro">
+          <p class="title">Hi, I'm Jayrut.</p>
+          <p class="sub-title">
+            <span class="sm-hide">JavaScript enthusiast.</span>
+            <span id="sm-grow">Software developer.</span>
+            <br />
+            <span class="sm-hide">Computer Science Graduate.</span>
+          </p>
+        </div>
+        <div id="social-bar">
+          <a href="https://github.com/jayrut29" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a
+          ><a href="https://www.linkedin.com/in/jayrutp" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/jayrutp" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://drive.google.com/file/d/1_6KnnFIqLrYpcIV9xDNscR8JQQPX661p/view?usp=sharing" target="_blank"
+            ><i class="fa fa-file-pdf-o" aria-hidden="true"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-container">
+      <div id="skills-section">
+        <div class="section-head col">
+          <h1>Skills</h1>
+          <div id="skills">
+            <ul class="flex wrap">
+              <li class="dd">javascript</li>
+              <li class="dd">react.js</li>
+              <li class="dd">redux</li>
+              <li class="dd">node.js</li>
+              <li class="dd">html</li>
+              <li class="dd">bootstrap</li>
+              <li class="dd">css</li>
+              <li class="dd">jquery</li>
+              <li class="dd">sass</li>
+              <li class="dd">ajax</li>
+              <li class="dd">json</li>
+              <li class="dd">angular</li>
+              <li class="dd">express.js</li>
+              <li class="dd">MySQL</li>
+              <li class="dd">mongodb</li>
+              <li class="dd">Redis</li>
+              <li class="dd">webpack</li>
+              <li class="dd">git</li>
+              <li class="dd">responsive design</li>
+              <li class="dd">php</li>
+              <li class="dd">magento</li>
+              <li class="dd">wordpress</li>
+              <li>mocha/chai</li>
+              <li>jest</li>
+              <li>docker</li>
+              <li>Travis CI</li>
+              <li>stylus</li>
+              <li>materialize</li>
+            </ul>
           </div>
-        </li>
-        <li class="timeline-inverted">
-          <div class="timeline-badge success"><i class="fa fa-graduation-cap"></i></div>
-          <div class="timeline-panel">
-						<div class="timeline-heading">
-              <h3 class="timeline-title"><strong>California State University Fullerton</strong></h3>
-							<h3 class="timeline-title">Master of Science in Computer Science</h3>
-							  <h4 class="">Jan 2015 - Dec 2016 | Fullerton, California</h4>
+        </div>
+      </div>
+      <div id="background-section">
+        <div class="content-container" style="width: 100%">
+          <div class="section-head col" style="  margin-top: 60px;">
+            <h1>About Me</h1>
+            <h2>Full Stack Developer</h2>
+          </div>
+          <p>
+            I am an energetic software engineer with a passion for creative design and a strong foundation in JavaScript. As someone who loves
+            overcoming challenges and problem solving, I enjoy building applications that solve real world problems. <br />
+
+            <br />My mission as an effective developer, capable of making immediate positive contributions in a collaborative setting, is finding and
+            working with teams that are equally passionate about creating quality, impactful products.
+          </p>
+        </div>
+      </div>
+
+      <div id="projects-section">
+        <div id="projects-section-bg">
+          <div class="content-container">
+            <div class="section-head col">
+              <h1 id="projects">Projects</h1>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
-          <div class="timeline-panel">
+            <div id="projects-container">
+              <div class="project-box animated" id="react-project">
+                <h2 class="project-name">
+                  <a href="https://github.com/jayrut/Hooked" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"></i>HooKed – React w/ Firebase App</a
+                  >
+                </h2>
+                <a href="https://github.com/jayrut29/Hooked" target="_blank"
+                  ><img class="project-name oth" style="width : 60%" src="https://i.postimg.cc/rsTz6bzr/hooked.png" alt=""
+                /></a>
 
+                <h3 class="project-description">
+                  Created a real-time app for a fictitious sea food market where price and quantity can change at moment’s notice by authorized users.
+                </h3>
+                <p>
+                  Constructed front end with React, Stylus, JavaScript, HTML and CSS. Leveraged Firebase to store database and improved social
+                  authentication strategy with OAuth.
+                </p>
 
-						<div class="timeline-heading">
-							<h3 class="timeline-title"><strong>Android Application Developer-Intern</strong></h3>
-				  <h3> A.Live Mind Technology</h3>
-							<h4 class="">July 2013 - May 2014 | Vadodara, India</h4>
-						</div>
-            <div class="timeline-body"><hr>
-              <p><i class="fa fa-caret-right" aria-hidden="true"></i>Participated in sprint planning meeting to decide the project component backlog and reported updates during the daily SCRUM meetings.
-<br><i class="fa  fa-caret-right" aria-hidden="true"></i>Parsed the data that were coming as JSON format using Android’s built-in JSON Object library.
-<br><i class="fa  fa-caret-right" aria-hidden="true"></i>Design local database and tables in the app to store the data locally using SQLite.<br><i class="fa  fa-caret-right" aria-hidden="true"></i>Utilized web-services (HTTPbased, XML, SOAP, JSON or other services), in order to tie applications to critical server-side APIs.<br>
-<i class="fa  fa-caret-right" aria-hidden="true"></i>Designed and implemented UI interface to interact with the users to take the order information.</p>
+                <div class="project-tools">
+                  <ul class="flex wrap">
+                    <li>ReactJs</li>
+                    <li>Stylus</li>
+                    <li>Firebase</li>
+                    <li>OAuth</li>
+                    <li>Webpack</li>
+                  </ul>
+                </div>
+
+                <h2 class="project-name">
+                  <br /><a href="https://github.com/jayrut29/LearningFuze" target="_blank">
+                    <i class="fa fa-github" aria-hidden="true"></i>LearningFuze</a
+                  >
+                </h2>
+                <a href="https://github.com/jayrut29/LearningFuze" target="_blank"
+                  ><img class="project-name oth" style="width : 60%" src="https://i.postimg.cc/yxB1kZmg/learningfuze.gif" alt=""
+                /></a>
+
+                <h3 class="project-description">
+                  LearningFuze is a web application that crowd-source recommended resources for learning programming languages and frameworks. Users
+                  can also able to Create and rate curriculum posted on LearningFuze
+                </h3>
+                <p>
+                  Built application with React, Node.js/Express, and MongoDB . Material UI was used to make an attractive and intuitive user interface
+                </p>
+
+                <div class="project-tools">
+                  <ul class="flex wrap">
+                    <li>ReactJs</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                    <li>Material UI</li>
+                    <li>Webpack</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-box animated hidden" id="yelp-project">
+                <h2 class="project-name">
+                  <a href="https://github.com/jayrut29/foodler" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"></i> Foodler – Restaurant finder App
+                  </a>
+                </h2>
+                <a href="https://github.com/jayrut29/foodler" target="_blank"> </a>
+                <img class="project-name oth" style="width : 60%" src="https://i.postimg.cc/D0hDqQYh/foodler.gif" alt="" />
+
+                <h3 class="project-description">
+                  Foodler is a restaurant finder app that will do the work for you. All you have to do is swipe to see restaurant's details and
+                  reviews. Implemented a swipeable interface to search nearby restaurants and details based on user’s current location.
+                </h3>
+                <p>
+                  Developed a single page responsive front end using AngularJS, UI routers, jQuery and Bootstrap. Integrated Google’s place API to
+                  retrieve nearby restaurant based on geographic coordinates.
+                </p>
+                <br />
+                <div class="project-tools">
+                  <ul class="flex wrap">
+                    <li>AngularJs</li>
+                    <li>BootStrap</li>
+                    <li>UI routers</li>
+                    <li>jQuery</li>
+                    <li>Google’s place API</li>
+                  </ul>
+                </div>
+
+                <h2 class="project-name">
+                  <br /><a href="https://github.com/jayrut29/yelpcamp" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> YelpCamp</a>
+                </h2>
+                <a href="https://infinite-caverns-43074.herokuapp.com/" target="_blank"
+                  ><img class="project-name oth" style="width : 60%" src="https://i.postimg.cc/J0mg03Z5/yc.gif" alt=""
+                /></a>
+
+                <h3 class="project-description">
+                  A Node.js Yelp clone using Campsites. This application allows users to login, add photos, reviews and upload campgrounds around.
+                  User can also view and comment other people's campground.
+                </h3>
+                <p>
+                  I created this project to practice my CRUD and creating RESTful routes with Node.js. Also, I wanted to integrate a NoSQL database in
+                  MongoDB, which proved to be very cool.
+                </p>
+                <br />
+                <div class="project-tools">
+                  <ul class="flex wrap">
+                    <li>BootStrap</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>Passport.js</li>
+                    <li>MongoDB</li>
+                    <li>Mongoose</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-box animated hidden" id="ecom-project">
+                <h2 class="project-name"><i class="fa fa-opencart" aria-hidden="true"></i>E-Commerce Website</h2>
+                <img class="project-name oth" style="width : 60%" src="https://i.postimg.cc/7hDhmcr8/myled.gif" alt="" />
+                <h3 class="project-description">
+                  Developed and maintaining an e-Commerce website based on Magento platform, and CMS applications based on WordPress platform.
+                </h3>
+                <p>
+                  I am responsible for finding and fixing vulnerabilities. Applying security patches. Marketing with social networking and
+                  paid-advertising. Regularly contribute to growth, UX design, and overall business strategies.<br />
+                </p>
+                <div class="project-tools">
+                  <ul class="flex wrap">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>bootstrap</li>
+                    <li>javascript</li>
+                    <li>ajax</li>
+                    <li>json</li>
+                    <li>php</li>
+                    <li>mysql</li>
+                    <li>api</li>
+                  </ul>
+                </div>
+
+                <h2 class="project-name"><br /><i class="fa fa-opencart" aria-hidden="true"></i>WordPress Website</h2>
+                <img class="project-name oth" style="width : 60%" src="https://i.postimg.cc/6qKVHMXH/mztax.gif" alt="" />
+                <h3 class="project-description">
+                  Developed and managed website CMS applications based on WordPress platform for an accounting firm
+                </h3>
+                <p>
+                  I was able to ensure implementation of a new responsive design leading to significant SEO performance increases after launch.
+                  <br />
+                </p>
+                <div class="project-tools">
+                  <ul class="flex wrap">
+                    <li>wordpress</li>
+                    <li>html5</li>
+                    <li>css3</li>
+                    <li>bootstrap</li>
+                    <li>jquery</li>
+                    <li>php</li>
+                    <li>mysql</li>
+                    <li>seo</li>
+                    <li>api</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-box animated hidden" id="react-project">
+                <h2 class="project-name">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"></i> React Projects</a>
+                </h2>
+                <a href="#"><img class="project-name oth" style="width : 60%" src="https://i.postimg.cc/2ym0MkYN/react-app.png" alt=""/></a>
+
+                <h3 class="project-description">
+                  <a href="https://obscure-cliffs-14428.herokuapp.com" target="_blank"><i class="fa fa-github"></i> YouTube Clone</a>
+                </h3>
+                <p>
+                  YouTube Clone is Video Player to watch Ad Free YouTube videos by searching keywords. Created single page application in with React,
+                  AJAX, Underscore.js, Youtube search API and Bootstrap.
+                </p>
+
+                <div class="project-tools">
+                  <ul class="flex wrap">
+                    <li>React</li>
+                    <li>AJAX</li>
+                    <li>YouTube search API</li>
+                    <li>Bootstrap</li>
+                    <li>Underscore.js</li>
+                  </ul>
+                </div>
+
+                <br />
+                <h3 class="project-description">
+                  <br /><a href="https://github.com/jayrut/redux-weatherapp" target="_blank"><i class="fa fa-github"></i> WeatherCast</a>
+                </h3>
+                <p>
+                  WeatherCast is a single page weather app to provide real-time weather analytics from any city in the United States. Built using
+                  React.js, Redux, Webpack, Babel, and axios. Handled real-time data requests to OpenWeather API. Implemented React-Sparklines and
+                  React-Google-Maps components to display real-time weather analytics.
+                </p>
+                <br />
+                <div class="project-tools">
+                  <ul class="flex wrap">
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>React-Sparklines</li>
+                    <li>React-Google-Maps</li>
+                    <li>OpenWeather API</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-box animated hidden" id="js-project">
+                <h2 class="project-name">
+                  <a href="https://github.com/jayrut/Colorify" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> COLORIFY -Mini Game</a>
+                </h2>
+                <a href="https://jayrut.github.io/Colorify/" target="_blank"
+                  ><img class="project-name oth" style="width : 60%" src="https://i.postimg.cc/5y13x43t/colorify.png" alt=""
+                /></a>
+                <h3 class="project-description">
+                  An addictive, fast-paced, color picker mini game which drive people crazy over color and time.
+                </h3>
+                <div class="project-tools">
+                  <ul class="flex wrap">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-box animated hidden" id="android-project">
+                <h2 class="project-name">
+                  <a href="https://github.com/jayrut/AugmentedTraveller" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"></i>Augmented Traveller</a
+                  >
+                </h2>
+                <a href="https://github.com/jayrut/AugmentedTraveller" target="_blank"
+                  ><img class="project-name agt" style="width : 60%" src="https://i.postimg.cc/nrJ2ZSk2/agt.gif" alt=""
+                /></a>
+                <h3 class="project-description">
+                  Augmented Traveler, helps users to know better about Los Angeles city by providing different functionalities such as
+                  location-based-information, images, reviews, ratings of most reviews places by visitors.
+                </h3>
+                <p>
+                  Used Google API with REST to browse many reviews, suggestion and candid photos by traveler to visit interesting places in Los
+                  Angeles city.
+                  <br />
+                  <br />Implemented Google maps api V2 for the navigation and real time traffic information to the destination.
+                  <br />
+                  <br />Implemented android xml parsing to load and update data from remote url. Developed registration, login and forum activities
+                  with PHP, MySQL and SQLlite.
+                </p>
+                <div class="project-tools">
+                  <ul class="flex wrap">
+                    <li>android studio</li>
+                    <li>Java</li>
+                    <li>json</li>
+                    <li>php</li>
+                    <li>mysql</li>
+                    <li>xml</li>
+                    <li>api</li>
+                    <li>sqlite</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-box animated hidden" id="aws-project">
+                <h2 class="project-name">
+                  <a href="https://github.com/jayrut/Spark.git" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"></i> Movie Recommendation Engine</a
+                  >
+                </h2>
+                <a href="https://github.com/jayrut/Spark.git" target="_blank">
+                </a>
+                <h3 class="project-description">
+                  A movie recommendation system based on a MovieLens database using Apache Spark and Python.
+                </h3>
+                <p>
+                  Used collaborative filtering with Spark’s Alternative Least Squares implementation and MLLib to produce movie recommendation.
+                  Created a similar Movies list from One million rating by running Spark on Amazon web Cluster.
+                </p>
+                <div class="project-tools">
+                  <ul class="flex wrap">
+                    <li>Apache Spark</li>
+                    <li>Python</li>
+                    <li>Amazon Web Service</li>
+                    <li>Python</li>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>ajax</li>
+                    <li>javascript</li>
+                  </ul>
+                </div>
+              </div>
             </div>
+            <h2 id="next">NEXT<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h2>
           </div>
-        </li>
+        </div>
+      </div>
 
-        <li class="timeline-inverted">
-          <div class="timeline-badge success"><i class="fa fa-graduation-cap"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-							<h3 class="timeline-title"><strong>Gujarat Technological University</strong></h3>
-							<h3 class="timeline-title">Bachelor of Engineering in Computer Engineering</h3>
-							  <h4 class="">July 2010 - June 2014 | Gujarat, India</h4>
-						  </div>
+      <div id="timeline-container">
+        <div class="page-header">
+          <h1 id="timeline">MY EXPERIENCE</h1>
+        </div>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-badge success">
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h3 class="timeline-title">
+                  <strong>Front End Developer</strong>
+                </h3>
+                <h3>Big Mirror Labs LLC | Sirius XM Radio Inc.</h3>
+                <h4 class="">April 2017 - Present | New York</h4>
+              </div>
+              <div class="timeline-body">
+                <hr />
+                <p>
+                  <i class="fa  fa-caret-right" aria-hidden="true"></i>Responsible for development of dynamic Web applications using React, Redux,
+                  Node.js, HTML5, CSS3, Bootstrap 4 and JSON.<br /><i class="fa  fa-caret-right" aria-hidden="true"></i>Extensively worked on REST
+                  Services by integrating multiple API services by making Restful web service calls using Node.js and Express.js.
+                </p>
+                <p>
+                  <i class="fa  fa-caret-right" aria-hidden="true"></i>Worked on cross browser responsiveness and compatibility. Developed unit test
+                  cases with Jest and used webpack as the UI build mechanism.<br /><i class="fa  fa-caret-right" aria-hidden="true"></i>Liaised with
+                  other backend developers, frontend developer, product mangers, and QA testers as needed.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge">
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h3 class="timeline-title">
+                  <strong>Full Stack Web Developer</strong>
+                </h3>
+                <h3>Ray-Lite Industries,Inc.</h3>
+                <h4 class="">June 2016 - April 2017 | Brea, CA</h4>
+              </div>
+              <div class="timeline-body">
+                <hr />
+                <p>
+                  <i class="fa  fa-caret-right" aria-hidden="true"></i>Developed and maintaining an eCommerce website using Magento framework. I am
+                  responsible for development and deployment of entire e-commerce store.<br /><i class="fa  fa-caret-right" aria-hidden="true"></i
+                  >Coding for cross browser responsiveness and compatibility.
+                </p>
+                <p>
+                  <i class="fa  fa-caret-right" aria-hidden="true"></i>Front end implementations in Javascript, jQuery, CSS, Ajax, Bootstrap<br /><i
+                    class="fa  fa-caret-right"
+                    aria-hidden="true"
+                  ></i
+                  >Regularly contribute to growth, UX design, and overall business strategies.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge success">
+              <i class="fa fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h3 class="timeline-title">
+                  <strong>California State University Fullerton</strong>
+                </h3>
+                <h3 class="timeline-title">
+                  Master of Science in Computer Science
+                </h3>
+                <h4 class="">Jan 2015 - Dec 2016 | Fullerton, California</h4>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h3 class="timeline-title">
+                  <strong>Android Application Developer-Intern</strong>
+                </h3>
+                <h3>A.Live Mind Technology</h3>
+                <h4 class="">July 2013 - May 2014 | Vadodara, India</h4>
+              </div>
+              <div class="timeline-body">
+                <hr />
+                <p>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>Participated in sprint planning meeting to decide the project component backlog
+                  and reported updates during the daily SCRUM meetings. <br /><i class="fa  fa-caret-right" aria-hidden="true"></i>Parsed the data
+                  that were coming as JSON format using Android’s built-in JSON Object library. <br /><i
+                    class="fa  fa-caret-right"
+                    aria-hidden="true"
+                  ></i
+                  >Design local database and tables in the app to store the data locally using SQLite.<br /><i
+                    class="fa  fa-caret-right"
+                    aria-hidden="true"
+                  ></i
+                  >Utilized web-services (HTTPbased, XML, SOAP, JSON or other services), in order to tie applications to critical server-side APIs.<br />
+                  <i class="fa  fa-caret-right" aria-hidden="true"></i>Designed and implemented UI interface to interact with the users to take the
+                  order information.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="timeline-badge success">
+              <i class="fa fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h3 class="timeline-title">
+                  <strong>Gujarat Technological University</strong>
+                </h3>
+                <h3 class="timeline-title">
+                  Bachelor of Engineering in Computer Engineering
+                </h3>
+                <h4 class="">July 2010 - June 2014 | Gujarat, India</h4>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div id="reach-section">
+        <div id="reach-section-bg">
+          <div class="content-container">
+            <div class="section-head col">
+              <h1>Reach Me</h1>
+              <p class="mb-10px"><strong>Email</strong>: jayrut29@gmail.com</p>
+            </div>
+            <form class="flex" method="POST" action="https://formspree.io/jayrut29@gmail.com" target="_blank">
+              <div class="flex wrap col" id="form-left">
+                <input type="text" name="name" placeholder="Your Name" />
+                <input type="text" name="email" placeholder="Your email" />
+                <button type="submit">Send</button>
+              </div>
+              <div class="flex wrap col" id="form-right">
+                <textarea name="message" placeholder="Your message"></textarea>
+              </div>
+            </form>
           </div>
-        </li>
-    </ul>
-	</div>
-
-
-	<div id="reach-section">
-		<div id="reach-section-bg">
-		<div class="content-container">
-			<div class="section-head col">
-				<h1>Reach Me</h1>
-				<p class="mb-10px"><strong>Email</strong>: jayrut29@gmail.com</p>
-				</div>
-
-			<form class="flex" action="https://formspree.io/jayrut29@gmail.com" method="POST" target="_blank">
-				<div class="flex wrap col" id="form-left">
-					<input type="text" name="name" placeholder="Your Name">
-					<input type="text" name="email" placeholder="Your email">
-
-					<button id="clear-button" type="button">CLEAR</button>
-				</div>
-				<div class="flex wrap col" id="form-right">
-					<textarea name="message" placeholder="Your message"></textarea>
-					<button type="submit" name="_next">Send</button>
-				</div>
-			</form>
-		</div>
-	</div>
-</div>
-	<footer></footer>
-</div>
-<!-- ==============================================
-SCRIPTS
-=============================================== -->
-
-</body>
-
+        </div>
+      </div>
+      <footer></footer>
+    </div>
+  </body>
 </html>
